@@ -1,6 +1,6 @@
 package com.example.conversor
 
-class conversor(arg1: Boolean) {
+class conversor() {
 
 
     fun KilometrosAMillas(num: Double): Double {

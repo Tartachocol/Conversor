@@ -20,14 +20,14 @@
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintTop_toTopOf="parent"
 
-        tools:layout_editor_absoluteX="-21dp" />
+       />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="-"
+        android:layout_marginTop="10dp"
+        android:text="Convertir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_list" />
@@ -35,12 +35,35 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hola"
-
-
+        android:layout_height="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"  />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_marginTop="10dp" />
 
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginTop="10dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
