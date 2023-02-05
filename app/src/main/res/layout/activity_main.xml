@@ -4,42 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:padding="18dp"
     tools:context=".MainActivity">
 
 
     <Spinner
-        android:id="@+id/spinner_list"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFC107"
-        android:inputType="text"
+        android:id="@+id/spinnerList"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/purple_200"
         android:isScrollContainer="true"
         android:spinnerMode="dialog"
-        android:textAlignment="center"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:backgroundTint="@color/purple_200"
         android:text="Convertir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_list" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerList" />
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="0dp"
+        android:id="@+id/tvUd1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:textSize="14dp"
+        android:layout_marginTop="10sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -47,36 +44,34 @@
     <!--  android:inputType="numberDecimal", solo deja insertar números y un punto.-->
 
     <EditText
-        android:id="@+id/editText1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/edtNumeroAConvertir"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:inputType="numberDecimal"
-
         android:text="0.0"
-        android:textSize="14dp"
-
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+        app:layout_constraintStart_toStartOf="@+id/tvUd1"
+        app:layout_constraintTop_toBottomOf="@+id/tvUd1" />
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvUd2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10sp"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edtNumeroAConvertir"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNumeroAConvertir" />
 
     <TextView
-        android:id="@+id/editText2"
+        android:id="@+id/tvNumConvertido"
         android:layout_width="match_parent"
-        android:layout_height="28dp"
-        android:textSize="14dp"
-
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/tvUd2"
+        app:layout_constraintTop_toBottomOf="@+id/tvUd2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
